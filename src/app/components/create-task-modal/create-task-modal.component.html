@@ -1,0 +1,17 @@
+<main>
+  <div class="header">
+    <i class='bx bx-x' (click)="closeModal()"></i>
+  </div>
+
+  <div class="main">
+    <label for="title">Título</label>
+    <input type="text" id="title" [(value)]="title" (input)="handleChangeInput($event)">
+
+    <label for="description">Descrição</label>
+    <textarea id="description" [(value)]="description" (input)="handleChangeTextarea($event)"></textarea>
+  </div>
+
+  <div class="footer">
+    <button (click)="createTask()">Criar Tarefa</button>
+  </div>
+</main>
