@@ -1,0 +1,18 @@
+<main>
+  @if (tasks.length === 0) {
+    <div class="information">
+      <p>Suas tarefas aparecerão aqui!</p>
+    </div>
+  }
+
+  <div class="tasks">
+    @for (task of tasks; track task.id) {
+      <a (click)="navigate(task.id)">
+        <div class="task">
+          <h1>{{ task.title }}</h1>
+          <p>{{ task.description }}</p>
+        </div>
+      </a>
+    }
+  </div>
+</main>
