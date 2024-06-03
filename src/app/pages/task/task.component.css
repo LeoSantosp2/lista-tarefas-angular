@@ -1,0 +1,47 @@
+main{
+  width: 100%;
+  min-height: 93%;
+}
+
+main .header{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .header button{
+  width: 80px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid #121212;
+  transition: all 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+main .header button:hover{
+  background-color: #121212;
+  color: #F2F2F2;
+}
+
+main .header h1{
+  font-size: 1.5rem;
+}
+
+main .main{
+  width: 100%;
+}
+
+main .main textarea{
+  width: 100%;
+  min-height: 500px;
+  padding: 10px;
+  border: 0px;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+  background-color: #F2F2F2;
+}

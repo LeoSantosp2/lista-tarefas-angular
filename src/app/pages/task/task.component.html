@@ -1,0 +1,14 @@
+<main>
+  <div class="header">
+    <h1>{{ task.title }}</h1>
+
+    <nav>
+      <button (click)="saveTask()">Salvar</button>
+      <button (click)="deleteTask(task.id)">Excluir</button>
+    </nav>
+  </div>
+
+  <div class="main">
+    <textarea [(value)]="task.task" (input)="handleChange($event)"></textarea>
+  </div>
+</main>
