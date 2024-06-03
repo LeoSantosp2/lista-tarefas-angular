@@ -1,0 +1,33 @@
+<main>
+  @if (deletedTasks.length === 0) {
+    <div class="information">
+      <p>As tarefas excluidas aparecerão aqui!</p>
+    </div>
+  }
+
+  <div class="tasks">
+    @for (task of deletedTasks; track task.id) {
+      <div class="task">
+        <div class="header">
+          <h1>{{ task.title }}</h1>
+
+          <nav>
+            <span class="material-symbols-outlined" (click)="restoreTask(task.id)">
+              restart_alt
+            </span>
+
+            <span class="material-symbols-outlined" (click)="deleteTasks(task.id)">
+              delete
+            </span>
+          </nav>
+        </div>
+
+        <div class="main">
+
+
+          <p>{{ task.description }}</p>
+        </div>
+      </div>
+    }
+  </div>
+</main>

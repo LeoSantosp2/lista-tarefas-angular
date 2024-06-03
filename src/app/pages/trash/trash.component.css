@@ -1,0 +1,57 @@
+main{
+  width: 100%;
+  min-height: 93%;
+  padding: 10px;
+  position: relative;
+}
+
+main .information{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main .information p{
+  font-size: 1rem;
+}
+
+main .tasks .task{
+  width: 80%;
+  height: 100px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #121212;
+  color: #F2F2F2;
+}
+
+main .tasks .task .header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .tasks .task .header h1{
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+main .tasks .task .header nav span{
+  margin-left: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+main .tasks .task .header nav span:hover{
+  opacity: 0.8;
+}
+
+main .tasks .task .main p{
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+  text-align: justify;
+  color: #C8C8C8;
+}
